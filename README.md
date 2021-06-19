@@ -16,4 +16,4 @@ python forge_automation.py <idea/eclipse> <path>
 
 ## Note
 - You must have python3 & pip already installed on your computer
-- This script only for 1.8.9 forge modding
+- This script only for 1.8.9 forge
