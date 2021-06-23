@@ -12,7 +12,7 @@ gralde_properties_raw = 'https://pastebin.com/raw/BxWUWLt8'
 
 if arg1 == 'eclipse' or arg1 == 'idea':
     if os.path.exists(arg2):
-        print('this project already exists in the followin directory')
+        print('this project already exist in the followin directory')
     else:
         os.mkdir(arg2)
 
