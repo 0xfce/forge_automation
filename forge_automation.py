@@ -52,8 +52,10 @@ if arg1 == 'eclipse' or arg1 == 'idea':
         print('wrapper modified, startin gradle...')
 
         if(os.path.exists(f'{home_user}/.gradle/caches/minecraft/net/minecraftforge/forge/1.8.9-11.15.1.2318-1.8.9')):
+            print('Bins found, executing clean build...')
             os.system(f'powershell.exe ./gradlew {arg1} clean build')
         else:
+            print('Bins not found, executing setupDecompWorkspace clean build')
             os.system(f'powershell.exe ./gradlew setupDecompWorkspace {arg1} clean build')
 
         print('gradle finished its job, creatin bat file to build your mod...')
