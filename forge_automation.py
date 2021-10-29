@@ -9,6 +9,7 @@ arg2 = sys.argv[2]
 mdk_url = 'https://maven.minecraftforge.net/net/minecraftforge/forge/1.8.9-11.15.1.2318-1.8.9/forge-1.8.9-11.15.1.2318-1.8.9-mdk.zip'
 gradle_raw = 'https://pastebin.com/raw/ZHDdUXjg'
 gralde_properties_raw = 'https://pastebin.com/raw/BxWUWLt8'
+home_user = os.path.expanduser('~')
 
 if arg1 == 'eclipse' or arg1 == 'idea':
     if os.path.exists(arg2):
@@ -50,7 +51,10 @@ if arg1 == 'eclipse' or arg1 == 'idea':
 
         print('wrapper modified, startin gradle...')
 
-        os.system(f'powershell.exe ./gradlew {arg1} clean build')
+        if(not os.path.exist(f'{home_user}/.gradle/caches/minecraft/net/minecraftforge/forge/1.8.9-11.15.1.2318-1.8.9')):
+            os.system(f'powershell.exe ./gradlew setupDecompWorkspace {arg1} clean build')
+        else:
+            os.system(f'powershell.exe ./gradlew {arg1} clean build')
 
         print('gradle finished its job, creatin bat file to build your mod...')
 
@@ -61,10 +65,5 @@ if arg1 == 'eclipse' or arg1 == 'idea':
         print('build.bat created.')
 
         print('you\'re good to go ;).')
-
 else:
     print('ide not found')
-
-
-
-
