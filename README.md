@@ -3,10 +3,10 @@ Just a simple forge projects automation, this will automatically download the la
 ## Installation
 First of all, you have to download some libraries
 ```sh
-pip3 install pyunpack
+pip install pyunpack
 ```
 ```sh
-pip3 install requests
+pip install requests
 ```
 
 ## How to use
