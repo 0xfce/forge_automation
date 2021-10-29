@@ -1,5 +1,5 @@
 # Forge Automation
-Just a simple forge automation script makes creating project much easier or atleast for me, so no need to download or extract and making folder everytime i want to work on a project. why? coz im too lazy D: !
+Just a simple forge projects automation, this will automatically download the latest forge-1.8.9-mdk and extract it into a project and run all the commands needed to make a forge project. im too lazy D: !
 ## Installation
 First of all, you have to download some libraries
 ```sh
