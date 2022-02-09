@@ -10,12 +10,12 @@ pip install requests
 ```
 
 ## How to use
-. -p/--path: Project path. (Required)
-. -i/--ide: Specify the ide (eclipse/intellij). (default arg value is eclipse)
-. -e/--enviroment: Work enviroment (forge/spigot). (default arg value is forge)
-. -c/--clean: Delete the license files from the project.
-. -l/--log: Printing the steps from downloading to the last event.
-. -b/--build: Creates the build.bat file for you.
+- -p/--path: Project path. (Required)
+- -i/--ide: Specify the ide (eclipse/intellij). (default arg value is eclipse)
+- -e/--enviroment: Work enviroment (forge/spigot). (default arg value is forge)
+- -c/--clean: Delete the license files from the project.
+- -l/--log: Printing the steps from downloading to the last event.
+- -b/--build: Creates the build.bat file for you.
 ```sh
 python forge_automation.py -p F:/development/java/forge/YourProjectNameHere/ -cbl
 ```
