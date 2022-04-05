@@ -17,7 +17,7 @@ pip install requests
 - -l/--log: Printing the steps from downloading to the last event.
 - -b/--build: Creates the build.bat file for you.
 ```sh
-python forge_automation.py -p F:/development/java/forge/YourProjectNameHere/ -cbl
+python mkfp.py -p F:/development/java/forge/YourProjectNameHere/ -cbl
 ```
 
 ## Note
