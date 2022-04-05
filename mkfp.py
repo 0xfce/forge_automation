@@ -54,10 +54,8 @@ class ForgeProject:
                         this.download_and_extract_mdk()
                     elif 'jre' in java_home:
                         print(Color.FAIL, 'Please point the JAVA_HOME to JDK not jre.')
-                        exit()
                 except KeyError:
                     print(Color.FAIL, 'JAVA_HOME not found.')
-                    exit()
             else:
                 print(Color.FAIL, 'Please set the java path to 1.8.0', Color.ENDC)
         else:
