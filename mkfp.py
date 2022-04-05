@@ -55,7 +55,7 @@ class ForgeProject:
                     elif 'jre' in java_home:
                         print(Color.FAIL, 'Please point the JAVA_HOME to JDK not jre.')
                 except KeyError:
-                    print(Color.FAIL, 'JAVA_HOME not found.')
+                    print(Color.FAIL, 'JAVA_HOME not found.', Color.ENDC)
             else:
                 print(Color.FAIL, 'Please set the java path to 1.8.0', Color.ENDC)
         else:
